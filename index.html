@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Lancinet Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-gray-800">
+    <h1 class="text-2xl font-bold">Lancinet<span class="text-indigo-500">Marketing</span></h1>
+    <nav class="hidden md:flex space-x-6 text-gray-300">
+      <a href="index.html" class="hover:text-white">Accueil</a>
+      <a href="offres.html" class="hover:text-white">Offres</a>
+      <a href="a-propos.html" class="hover:text-white">À propos</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center px-6 py-24 bg-gradient-to-b from-gray-950 to-gray-900">
+    <h2 class="text-5xl font-bold mb-6 fade-in">Stratégies marketing sur mesure pour votre réussite</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-8 fade-in">
+      Chez Lancinet Marketing, nous vous accompagnons pas à pas pour propulser votre visibilité, créer une marque forte et transformer vos visiteurs en clients fidèles.
+    </p>
+    <a href="offres.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-full transition fade-in">
+      Découvrir nos offres
+    </a>
+  </section>
+
+  <!-- Services clés -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Ce que nous vous apportons</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-900 p-6 rounded-xl shadow fade-in">
+          <h4 class="text-xl font-semibold mb-2">Audit et Stratégie</h4>
+          <p class="text-gray-400">Analyse approfondie de votre activité, positionnement et recommandations stratégiques.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow fade-in">
+          <h4 class="text-xl font-semibold mb-2">Image de marque</h4>
+          <p class="text-gray-400">Nous construisons une identité de marque forte, cohérente et impactante.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow fade-in">
+          <h4 class="text-xl font-semibold mb-2">Acquisition & Fidélisation</h4>
+          <p class="text-gray-400">Mise en place de tunnels de vente, email marketing et campagnes digitales efficaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="bg-gray-900 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Ils nous ont fait confiance</h3>
+      <div class="space-y-8">
+        <blockquote class="text-gray-300 italic">“Grâce à Lancinet Marketing, j'ai doublé mon chiffre d'affaires en 3 mois. Leur approche est humaine et orientée résultats.”<br><span class="text-indigo-400 font-semibold">— Amine, Coach Sportif</span></blockquote>
+        <blockquote class="text-gray-300 italic">“Enfin une agence qui parle vrai ! Professionnels, réactifs et ultra pédagogues.”<br><span class="text-indigo-400 font-semibold">— Sophie, Fondatrice de boutique éthique</span></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos express -->
+  <section class="py-20 px-6">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-3xl font-bold mb-4">Notre mission</h3>
+        <p class="text-gray-400 mb-4">Lancinet Marketing est née de la volonté d’aider les indépendants, TPE et PME à se développer de façon durable grâce à un marketing accessible, authentique et efficace.</p>
+        <p class="text-gray-400">Forts de plusieurs années d’expérience, nous offrons un accompagnement sur-mesure alliant stratégie, design, pédagogie et performance.</p>
+        <a href="a-propos.html" class="mt-4 inline-block text-indigo-400 hover:underline">En savoir plus →</a>
+      </div>
+      <div>
+        <img src="https://fr.pinterest.com/pin/484277766201542751/" alt="Marketing digital" class="rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-indigo-600 text-white text-center py-16 px-6">
+    <h3 class="text-3xl font-bold mb-4">Prêt à transformer votre business ?</h3>
+    <p class="mb-6">Nous vous aidons à clarifier votre message, toucher votre audience, et convertir.</p>
+    <a href="contact.html" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+      Contactez-nous
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800">
+    © 2025 Lancinet Marketing. Tous droits réservés.
+  </footer>
+
+  <!-- Animation JS -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
